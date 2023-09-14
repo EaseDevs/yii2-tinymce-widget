@@ -19,6 +19,6 @@ class TinyMceAssetTest extends TestCase
         $this->assertEquals(1, count($view->assetBundles));
         $this->assertTrue($view->assetBundles['dosamigos\\tinymce\\TinyMceAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/views/layouts/rawlayout.php');
-        $this->assertContains('tinymce.js', $content);
+        $this->assertStringContainsString('tinymce.js', $content);
     }
 }

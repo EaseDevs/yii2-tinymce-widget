@@ -23,3 +23,5 @@ nbproject
 # mac deployment helpers
 switch
 index
+/composer.phar
+/.phpunit.result.cache

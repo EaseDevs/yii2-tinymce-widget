@@ -19,6 +19,6 @@ class TinyMceLangAssetTest extends TestCase
         $this->assertEquals(2, count($view->assetBundles));
         $this->assertTrue($view->assetBundles['tests\\overrides\\TestTinyMceLangAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/views/layouts/rawlayout.php');
-        $this->assertContains('langs/es.js', $content);
+        $this->assertStringContainsString('langs/es.js', $content);
     }
 }

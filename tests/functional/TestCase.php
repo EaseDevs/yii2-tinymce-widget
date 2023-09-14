@@ -12,14 +12,14 @@ use yii\web\View;
 /**
  * This is the base class for all yii framework unit tests.
  */
-abstract class TestCase extends \PHPUnit_Framework_TestCase
+abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
     public static $params;
 
     /**
      * Mock application prior running tests.
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->mockWebApplication(
             [
@@ -41,7 +41,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
      * Clean up after test.
      * By default the application created with [[mockApplication]] will be destroyed.
      */
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
         $this->destroyApplication();
@@ -55,6 +55,9 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
                     'id' => 'testapp',
                     'basePath' => __DIR__,
                     'vendorPath' => $this->getVendorPath(),
+                    'aliases' => [
+                        '@bower' => '@vendor/bower-asset',
+                    ],
                 ],
                 $config
             )
@@ -69,6 +72,9 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
                     'id' => 'testapp',
                     'basePath' => __DIR__,
                     'vendorPath' => $this->getVendorPath(),
+                    'aliases' => [
+                        '@bower' => '@vendor/bower-asset',
+                    ],
                     'components' => [
                         'request' => [
                             'cookieValidationKey' => 'wefJDF8sfdsfSDefwqdxj9oq',
