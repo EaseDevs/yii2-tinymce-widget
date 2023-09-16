@@ -29,7 +29,7 @@ to the require section of your application's `composer.json` file.
 
 ```
 
-use dosamigos\tinymce\TinyMce;
+use easedevs\tinymce\TinyMce;
 
 <?= $form->field($model, 'text')->widget(TinyMce::className(), [
     'options' => ['rows' => 6],
