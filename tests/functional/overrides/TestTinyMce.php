@@ -1,13 +1,13 @@
 <?php
 /**
- * @link https://github.com/2amigos/yii2-tinymce-widget
+ * @link https://github.com/easedevs/yii2-tinymce-widget
  * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
 namespace tests\overrides;
 
-use dosamigos\tinymce\TinyMce;
-use dosamigos\tinymce\TinyMceAsset;
+use easedevs\tinymce\TinyMce;
+use easedevs\tinymce\TinyMceAsset;
 use yii\helpers\Json;
 use yii\web\View;
 

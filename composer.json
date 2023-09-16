@@ -9,7 +9,8 @@
         "yii 2",
         "extension",
         "widget",
-        "tinymce"
+        "tinymce",
+        "easedevs"
     ],
     "license": "BSD-3-Clause",
     "authors": [
@@ -40,7 +41,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dosamigos\\tinymce\\": "src"
+            "easedevs\\tinymce\\": "src"
         }
     },
     "config": {

@@ -4,15 +4,15 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\tinymce;
+namespace easedevs\tinymce;
 
 use yii\web\AssetBundle;
 
 class TinyMceLangAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/2amigos/yii2-tinymce-widget/src/assets';
+    public $sourcePath = '@vendor/easedevs/yii2-tinymce-widget/src/assets';
 
     public $depends = [
-        'dosamigos\tinymce\TinyMceAsset'
+        'easedevs\tinymce\TinyMceAsset'
     ];
 }

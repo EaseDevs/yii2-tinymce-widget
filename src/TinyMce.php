@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace dosamigos\tinymce;
+namespace easedevs\tinymce;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -67,8 +67,9 @@ class TinyMce extends InputWidget
             $langFile = "langs/{$this->language}.js";
             $langAssetBundle = TinyMceLangAsset::register($view);
             $langAssetBundle->js[] = $langFile;
-            $this->clientOptions['language_url'] = $langAssetBundle->baseUrl . "/{$langFile}";
-            $this->clientOptions['language'] = "{$this->language}";//Language fix. Without it EN language when add some plugins like codemirror 
+            $this->clientOptions['language_url'] = $langAssetBundle->baseUrl . '/' . $langFile;
+            //Language fix. Without it EN language when add some plugins like codemirror
+            $this->clientOptions['language'] = $this->language;
         }
         // @codeCoverageIgnoreEnd
 

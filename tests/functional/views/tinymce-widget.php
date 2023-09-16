@@ -1,5 +1,5 @@
 <?php
-use dosamigos\tinymce\TinyMce;
+use easedevs\tinymce\TinyMce;
 
 /* @var $this yii\web\View */
 /* @var $model tests\models\Post */
