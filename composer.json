@@ -33,7 +33,7 @@
     "prefer-stable": true,
     "require": {
         "yiisoft/yii2": "^2.0",
-        "tinymce/tinymce": "^6.7",
+        "tinymce/tinymce": "^7.0",
         "php": ">=7.1"
     },
     "require-dev": {
