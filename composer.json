@@ -34,10 +34,10 @@
     "require": {
         "yiisoft/yii2": "^2.0",
         "tinymce/tinymce": "^7.0",
-        "php": ">=7.1"
+        "php": ">=8.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "^10.3"
+        "phpunit/phpunit": "^11.2"
     },
     "autoload": {
         "psr-4": {
